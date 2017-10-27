@@ -1,0 +1,16 @@
+iteration1_work.txt documents division of labor statement
+
+Dalton Stokke:
+	set up project repo directory structure
+	created Token.h and Token.cc
+	initial TODO and structure comments
+	created tests for scanner_tests.h
+	
+Xukun Qin:
+	pseudo code generation
+	created regex's for enum
+	google style compliance
+	comments for code
+
+Jointly:
+	coded program function of scanner.cc and scanner.h

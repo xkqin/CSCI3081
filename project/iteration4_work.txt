@@ -1,0 +1,180 @@
+iteration4_work.txt
+Dalton Stokke
+Xukun Qin
+
+Contains detailed work breakdown for iteration 4.
+
+Dalton Stokke : 
+      Added operator overload function declarations to matrix.h, implemented all function definitions in matrix.cc.
+      Created paths in Makefile to compile codegeneration_tests.h, matrix.h, and matrix.cc.  Wrote my_code_1.dsl 
+      sample test, as well as resprective trans.cc and .expected files.
+
+Xukun Qin :
+      Implemented CppCode funtion for all functions in Program.h, Stmts.h, Stmt.h, Decl.h, and Expr.h.  Wrote my_code_2.dsl
+      sample test, as well as respective trans.cc and .expected files.
+
+Jointly :
+      Discussed general purpose of CppCode call, what role matrix.h and matrix.cc plays in sample tests, and ran through a
+      few examples of operator overloading for matrix.cc.  Completed testing and google style check.
+
+Comments:
+
+Overall the project went very well, no major logical errors occurred and syntax issues were pretty easy to fix.  
+We did run into an issue regarding the matrix files.  Specifically, the operator overloading functions proved confusing, 
+and the use of friend and its purpose still elude me.  We opted not to override the copy constructor or the default destructor, 
+and noticed a case during testing where given the 2 lines:
+ 1)  matrix ans = a * l;   
+ 2)  ans = ans;
+line 1 will not result in a call to the overloaded assignment operator, but instead a call to the copy constructor, while
+line 2 would result in a call to the assignment operator.  Since this had no impact on the function of the matrix class,
+and the resulting assignment produced the correct results, no actions were taken.
+
+The difficult parts of iteration 4 were as follows: the function building about the CppCode, because some of the functions proved
+confusing between the unparesed function and the cppcode function, and the operator overloading part, understanding the meaning of 
+overloading at first is hard, but after that the implementation of these functions becomes easier to accomplish.
+
+In order to build the CppCode functions we needed to closely study the values in the provided samples, after considerable effort we
+were able to discern the trends for the return values, and this helped speed up progress considerably.  We even added some spacing 
+in order to improve the readability of the CppCode return value, though this was just aesthetics.
+
+
+Git LOG :
+
+commit e7d22137ded7040e240c6b3e5c08913381b3b866
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Sat Apr 22 22:22:08 2017 -0500
+
+    Delete my_code_2.output
+
+commit 1382e35258bcb56b0046644e261896c67d9cf038
+Author: Xukun <qinxx215@umn.edu>
+Date:   Sat Apr 22 17:31:07 2017 -0500
+
+    finish and push my_cdoe_2 all tests pass
+
+commit 099f44322bd1499aaf7dc0b5a7d9d01a7f2e5c7f
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Sat Apr 22 17:21:51 2017 -0500
+
+    adding corrected expected output file, fixed small error added to expr from last commit
+
+commit 60e2e4ba66a808aef63708ab63810f27f415cd7b
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Sat Apr 22 17:10:24 2017 -0500
+
+    adding my_code_1.data to repo, including further clean up on expr and stmt cppcode
+
+commit 45a0fc32d82ad18c28ac2c46efeeab8deb56c030
+Merge: bf48cf0 c99da6c
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Sat Apr 22 16:57:14 2017 -0500
+
+    Merge branch 'master' of https://github.umn.edu/umn-csci-3081S17/repo-group-feynman
+
+commit bf48cf0b6da6bf3fd1e05dd8e767d1484ad3080c
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Sat Apr 22 16:57:06 2017 -0500
+
+    commiting work in progress my_code_1 and some clean up to .cc output for clarity
+
+commit c99da6c831d8abea7fc87b6a9fc5bd1e706b970b
+Author: Xukun <qinxx215@umn.edu>
+Date:   Sat Apr 22 16:45:06 2017 -0500
+
+    fix CppCpod function within whileStmt class
+
+commit 66c26e6cf938bdc4b1a61cf5de49fd37fd7dbdaf
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Apr 21 19:24:42 2017 -0500
+
+    updated codegeneration file to orig class repo file, changed matrix.cc to Matrix.cc, because we wouldn't want to have all our .cc files and .h files be lowercase... that would just be weird...
+
+commit 5ae32f7e4acd42b60cfc3bad784ccee0f9efafca
+Author: Xukun <qinxx215@umn.edu>
+Date:   Fri Apr 21 18:39:12 2017 -0500
+
+    finish the google style of the iter4
+
+commit 0c74bff90596c93e337a8c26115e8da914b02c31
+Author: Xukun <qinxx215@umn.edu>
+Date:   Fri Apr 21 18:31:25 2017 -0500
+
+    finish the Cppcode function in decl class and make it work to pass the 8 tests
+
+commit 5addef290c9132125b79fff47a8a74457f5680d3
+Author: Xukun <qinxx215@umn.edu>
+Date:   Fri Apr 21 18:30:18 2017 -0500
+
+    finish the Cppcode function in expr and stmt class
+
+commit 90c7dc43284f89e10e20c3811fd237c45ea9dca2
+Author: Xukun <qinxx215@umn.edu>
+Date:   Fri Apr 21 17:20:21 2017 -0500
+
+    finish the CppCode function in stmts.h class
+
+commit 64744c2abfbfeaf6dfcd552764a9c5a6d242a544
+Author: Xukun <qinxx215@umn.edu>
+Date:   Fri Apr 21 17:20:01 2017 -0500
+
+    finish the CppCode function in stmt.h class
+
+commit 8b810ac353bf25b47fac87f154f7cb38530b25b8
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Apr 21 15:51:16 2017 -0500
+
+    CppCode added for last Expr functions, testing needed
+
+commit 78330dbf80986fd5c9cafdb9a22ccebdd0009e03
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Apr 21 14:20:34 2017 -0500
+
+    updates for compilation of codegeneration_tests, fixes to program.h
+
+commit 4480eca16f797eef568d4305e483740f6c2493d9
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Apr 21 13:33:40 2017 -0500
+
+    google style check on completed work to date, makefile updated for codegeneration_tests, comment added for matrix_test target
+
+commit d74ceb0cbbbe10a3d4e3c62d6c2aec9774315437
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Apr 21 13:03:50 2017 -0500
+
+    adding matrix test file, addition already created for Makefile
+
+commit 10ee1d7242286f1c8c9e08c36b1545b72a0baa03
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Apr 21 03:24:23 2017 -0500
+
+    completed and tested matrix.h/matrix.cc for multiplication and assignent operators, updated makefile to create matrix.o, no updates to makefile for codegeneration_tests.h
+
+commit a57a8ae60b7101903a8943af492eb8270e69efc5
+Author: Xukun <qinxx215@umn.edu>
+Date:   Thu Apr 20 15:35:11 2017 -0500
+
+    finish CppCode function in stmts class
+
+commit bd07393c704626a3fad2d2a1f93bd6ad2eb72704
+Author: Xukun <qinxx215@umn.edu>
+Date:   Thu Apr 20 15:02:27 2017 -0500
+
+    finish part of the expr and decl class need to be completed later
+
+commit e07827e2d3e7798635e00b08ef167721c68b1405
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Wed Apr 19 17:58:24 2017 -0500
+
+    Some completed matrix.cc, need to finish operator overloading functions
+
+commit bb5a7efad552b4f03982e685969380aa7e5d2a1a
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Tue Apr 18 23:05:31 2017 -0500
+
+    commiting all file changes from the class repo, no changes to files beyond initial move from repo
+
+commit fa114640b8a369d339ef0b64b536e9f6175a34d3
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Apr 14 15:56:35 2017 -0500
+
+    commiting initial iteration 4 files, added copyright to Matrix.h, and some google style fixes to Matrix.h

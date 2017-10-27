@@ -1,0 +1,26 @@
+Dalton Stokke 
+Qin Xukun
+
+Writing Assignment 1 
+
+Division of Work txt file
+
+First a note: All changes to our scanner.h and scanner.cc files were done in lab, 
+and improvements.pdf was written during that timeframe as well.  After changes were 
+completed they were then explained in improvements.pdf, and once all issues had been
+addressed, improvements.pdf was then edited for clarity and conciseness.
+
+Qin Xukun:
+	Addressed issues 4 and 6, due to the cause of the issues to be related to 
+	the same problem of using integer literals as indexes in our array. 
+	Addressed these issues by replacing those literals with the relevant 
+	enumerated TokenType. 
+
+Dalton Stokke:
+	Created Scanner object constructor and moved regex_t array into that 
+	constructor, while removing redundant regex_t pointer created to hold
+	regex values before being placed into array.  Effectively handling 
+	issues 2 and 5. Edited improvements.pdf to clarity and conciseness.
+
+
+

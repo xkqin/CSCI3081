@@ -1,0 +1,62 @@
+iteration2_work.txt documents division of labor statement
+
+Dalton Stokke:
+	Added regex's to enum for regex additions as listed in iter2 specifications.  Fixed variableName regex as it was failing parser_tests.h, due to lack of accounting for numbers.
+	
+Xukun Qin:
+	Added tests for new regex's for scanner_tests as listed in iter2 specifications.  Added line Comment regex to handle single line comments in .dsl files.  Edited src files for google 
+
+Jointly:
+	Together we wrote mysample.dsl, and jointly pushed our commits while working in a pair programming style.  All work was commited and pushed under Dalton's log in, although the work was completed together.
+
+LOG: 
+
+commit a844b922612f747700cb5415ce1b9ebc3607431b
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Thu Mar 2 15:28:53 2017 -0600
+
+    adding iter2 work txt and fix for reget -> regex
+
+commit 9356d40cdf5b6f0f1c78f369ad316ec316859968
+Merge: 1b883c4 e93f54c
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Thu Mar 2 15:21:28 2017 -0600
+
+    Merge branch 'master' of https://github.umn.edu/umn-csci-3081S17/repo-group-feynman
+
+commit 1b883c46d6e0f7a1f6cf2a0c2f1c6d5718fdfab1
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Thu Mar 2 15:20:30 2017 -0600
+
+    Committing detailed work breakdown
+
+commit e93f54c1d33ac797072f6800fbbf0f53f3ca08a8
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Thu Mar 2 15:14:18 2017 -0600
+
+    Google Style Check Complete, iter2 complete, tagging after commit
+
+commit fed736a6aca16a1969b9e5ae38e1dd892bd2d68e
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Thu Mar 2 14:57:37 2017 -0600
+
+    Committing completed project, need to google style scanner.cc
+
+commit 0bf79742a3587291800b446c7d73e3a0934d64a9
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Wed Mar 1 19:26:18 2017 -0600
+
+    Google Style Check Complete
+
+commit 700354f91489599bf099d5eeec0a486670fffbb5
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Wed Mar 1 19:13:16 2017 -0600
+
+    Google Style checking
+
+commit 915cd7c2fd37258aac8f9291f03bd5706414bbfe
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Wed Mar 1 18:46:18 2017 -0600
+
+    Committing iter2 files
+

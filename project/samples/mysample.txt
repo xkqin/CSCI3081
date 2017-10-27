@@ -1,0 +1,1 @@
+"hello" int string 1 233.44 

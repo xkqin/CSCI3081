@@ -1,0 +1,230 @@
+iteration3_work.txt documents division of labor statement
+
+Dalton Stokke:
+   Created initial files for ast abstract classes (declarations.h), properly ordered includes and include guards to
+   correctly compile ast-test, added classes for program.h, stmt.h, stmts.h, used UMLet to create those classes in
+   our project UML as well.
+
+Xukun Qin:
+  Added classes for expr.h and decl.h, used UMLet to create those classes in our project UML as well.  Added comments
+  for doxygen documentation, generated doxygen document, created and moved iter3Documentation.pdf and
+  UMNL_Iteration3.pdf inside this directory.
+
+Jointly:
+  Together we wrote parser.cc to function with the parsing of our .dsl files and the unparsing function.
+
+LOG:
+commit 77bef5e1a34fca78d09bea54b247a261c8d24137
+Author: Xukun <qinxx215@umn.edu>
+Date:   Tue Apr 11 17:03:49 2017 -0500
+
+    updated file stucture and completed google style checking for all .cc and .h files.
+
+commit cbe9196857fffe4036a375d5d154b8f63b6d3854
+Author: Xukun <qinxx215@umn.edu>
+Date:   Tue Apr 11 16:58:44 2017 -0500
+
+    added iter3 documentation file  for generated doxygen comments.
+
+commit c2a7c1c15104c90dd42d80ced7504610dffbb755
+Author: Xukun <qinxx215@umn.edu>
+Date:   Tue Apr 11 16:57:15 2017 -0500
+
+    added UML_iteration3 pdf for UML class diagram for project.
+
+commit 392e904492e091bf918cf606927d39ccdde238a2
+Author: Xukun <qinxx215@umn.edu>
+Date:   Tue Apr 11 16:55:51 2017 -0500
+
+    added UML mainpage for doxygen documenation file
+
+commit 2cea2c410cd81cc8ed4cedf06b55aa0c17ebd8f0
+Author: Xukun <qinxx215@umn.edu>
+Date:   Tue Apr 11 14:50:31 2017 -0500
+
+    add deoxgyn comment to the decl.h file
+
+commit 50d3f795a65d7253b956223a0b7f500765c1e577
+Author: Xukun <qinxx215@umn.edu>
+Date:   Tue Apr 11 14:40:43 2017 -0500
+
+    add deoxgyn comment to the stmts.h file
+
+commit 10799cc2237ab75b6b11ec0e5f0765f3af2fb497
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Sun Apr 9 17:21:22 2017 -0500
+
+    adding comments to ast_tests.h on testing completion dates
+
+commit 60ecc43592b3989912508b21ae8f5089fbcc815d
+Merge: c12ff5b 3802acc
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Sun Apr 9 15:46:35 2017 -0500
+
+    Merge branch 'master' of https://github.umn.edu/umn-csci-3081S17/repo-group-feynman
+
+commit c12ff5bfaaffdc583ca3ebfb5dc9bcde9f9d7da2
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Sun Apr 9 15:46:09 2017 -0500
+
+    committing final files, including iteration3_work document, and completed cpp testing
+
+commit 3802acc4496081127435647ef5e7c53a5b18dd86
+Author: stok0165 <stok0165@umn.edu>
+Date:   Sun Apr 9 15:12:24 2017 -0500
+
+    Delete mainpage.h
+
+    removed for cpp check
+
+commit fcb0962071b435893888c4ef63d00bd0cd46af69
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Sun Apr 9 14:24:12 2017 -0500
+
+    changed include guards back to project_include, as per email instructions for updating linter command with --repository=.. , added some comments to declarations.h as well as created mainpage.h, created doc directory and updated uml for iter3 which is now inside doc directory
+
+commit 3823e811bfc75fc817e9f0d834d2c8057523cb9c
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Apr 7 15:35:17 2017 -0500
+
+    cleaned up parser.cc, removed commented out code, removed extra classes from expr that were replaced with relationshipExpr
+
+commit 8c1e3e09fa49b0a751acece0468e216c89e9e9ec
+Author: Xukun <qinxx215@umn.edu>
+Date:   Thu Apr 6 16:56:46 2017 -0500
+
+    fix the google style of the parse.cc and all the .h file but leave the namespace problem in google style
+
+commit 46227cc2b6f2a5e3dfab9f8e3db1746b623f705d
+Merge: c11ddbf c8c34f3
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Mar 31 19:14:21 2017 -0500
+
+    merging files for completed iter3
+
+commit c8c34f31ab2c36cd42f802916f4c4e3e820efc12
+Author: stok0165 <stok0165@umn.edu>
+Date:   Fri Mar 31 19:08:48 2017 -0500
+
+    Delete parser.cc
+
+    removing to push current version without conflicts.
+
+commit c11ddbf440382f162e8d98285edfb42517ef7a17
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Mar 31 19:07:55 2017 -0500
+
+    completed parser.cc, passing all tests, added relationshipExpr class, updated Makefile, fixed unparse method syntax errors in matrixDecl and stmtStmt concrete classes
+
+commit 454276cf98cbd640b8a77e2dc0f48339b9e46f6e
+Author: Xukun <qinxx215@umn.edu>
+Date:   Fri Mar 31 17:18:16 2017 -0500
+
+    finish part of the ast in stmt and some of the expr class implement that add them to the ast
+
+commit e156efe43a612ca3b207197b4f26e70f4dfd0a8a
+Author: stok0165 <stok0165@umn.edu>
+Date:   Wed Mar 29 13:55:17 2017 -0500
+
+    Delete MyMakeFile
+
+    redundant makefile
+
+commit 1984eb6b4e741218173b998d0a3405b06b9263e7
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Wed Mar 29 13:53:47 2017 -0500
+
+    minor change to test_sample_ast to improve dsl syntax and allow parse.
+
+commit 01bf212dec59a659be7625df76f6a8393a8457af
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Wed Mar 29 13:51:15 2017 -0500
+
+    minor fix to naming of additional test in ast_tests.h
+
+commit 9976e8991049964c367de1bf96aefa24d77314ef
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Wed Mar 29 13:47:23 2017 -0500
+
+    updated makefile to compile and run ast_tests, updated ast_tests.h from class repo, included self generated sample based on class sample, compiles but all tests fail due to unfinished ast in parser.cc.
+
+commit dd7af6b8766d86fd56efd0449d9cd423116579c9
+Author: stok0165 <stok0165@umn.edu>
+Date:   Sat Mar 25 13:11:05 2017 -0500
+
+    Delete iter2scanner.h
+
+    Removing redundant file from repo, iter2scanner.h is already included as scanner.h.
+
+commit f18e7c80c1389cc630dc4f09e86ce8930e6bc966
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Sat Mar 25 12:51:29 2017 -0500
+
+    fixed minor syntax errors, organized includes for parse_result.h, created forward declaration file for abstract nonterminal classes (declarations.h), fixed compiling errors (compiling parser.cc will compile all added iter3 nonterminal .h files), google style check completed on all src and include files.
+
+commit 7551873340ecea295d1491a5e021177226da57b4
+Author: Xukun <qinxx215@umn.edu>
+Date:   Fri Mar 24 20:51:28 2017 -0500
+
+    small difference change for the stmt class add ; to the constructor
+
+commit 638937f061ecb13be3503222c6c80578f66c9e16
+Author: Xukun <qinxx215@umn.edu>
+Date:   Fri Mar 24 20:50:51 2017 -0500
+
+    small difference change for the decl class add ; to the constructor
+
+commit 432d57c8266a912ce5a61668b7205d52e326e293
+Author: Xukun <qinxx215@umn.edu>
+Date:   Fri Mar 24 20:44:10 2017 -0500
+
+    finish declaration of the class and finish the contain of the function unparse and the construtor for stmts class
+
+commit ddcfc53c1333f2477b9425a36a8d7a726c7aebfd
+Author: Xukun <qinxx215@umn.edu>
+Date:   Fri Mar 24 20:43:43 2017 -0500
+
+    finish declaration of the class and finish the contain of the function unparse and the construtor for stmt class
+
+commit 7c16175e50245c84b5a8df10d5471b00c89d3a62
+Author: Xukun <qinxx215@umn.edu>
+Date:   Fri Mar 24 20:43:14 2017 -0500
+
+    finish declaration of the class and finish the contain of the function unparse and the construtor for decl class
+
+commit abf0650b0afc162e70a555aed24a95f808348898
+Author: Xukun <qinxx215@umn.edu>
+Date:   Fri Mar 24 20:42:43 2017 -0500
+
+    finish declaration of the class and finish the contain of the function unparse and the construtor for expr class
+
+commit 9b71f54a128e7e1c752292a9d2313ff39ecd4ec0
+Merge: 9ce739c da1e43b
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Mar 24 17:41:03 2017 -0500
+
+    Merge branch 'master' of https://github.umn.edu/umn-csci-3081S17/repo-group-feynman
+
+commit 9ce739ca1453b503f4d8c8795b32a17618215ad2
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Mar 24 17:40:44 2017 -0500
+
+    some minor improvements to decl.h
+
+commit da1e43b5fdb90ba794f5ef28715bcfba0dc4815d
+Author: stok0165 <stok0165@umn.edu>
+Date:   Fri Mar 24 17:16:52 2017 -0500
+
+    Delete node.h
+
+commit 60088b86382d5d0cf30aaf92a51ea11a21f64b2a
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Mar 24 17:15:21 2017 -0500
+
+    adding general ast files for nonterminals, partially completed classes most have only abstract class created, files are seperated instead of consolidated in ast and follow our created UML diagram.
+
+commit 00dd8c0626ababe7ea979609e09abb30d6c5c6d4
+Author: Dalton Stokke <stok0165@umn.edu>
+Date:   Fri Mar 10 20:30:14 2017 -0600
+
+    Committing bare bones decl.h, expr.h, node.h, program.h, stmt.h, and stmts.h
